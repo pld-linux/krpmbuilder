@@ -11,7 +11,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libpng-devel
 Buildrequires:	qt-devel
-BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
