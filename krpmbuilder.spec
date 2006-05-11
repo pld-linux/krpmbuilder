@@ -1,17 +1,17 @@
 Summary:	KRPMBuilder makes the building of spec files and RPM packages easy
+Summary(pl):	KRPMBuilder - narzêdzie u³atwiaj±ce tworzenie plików spec i pakietów RPM
 Name:		krpmbuilder
 Version:	1.2
 Release:	0.2
 License:	GPL v2
-Group:		Applications
+Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/krpmbuilder/%{name}-%{version}.tar.gz
 # Source0-md5:	99b84803171d64f1347617b5facd3851
 URL:		http://krpmbuilder.sourceforge.net/
-BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	kdelibs-devel
 BuildRequires:	libpng-devel
 Buildrequires:	qt-devel
-BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -19,6 +19,12 @@ KRPMBuilder is a KDE application that makes the building of spec files
 and RPM packages easy. After editing the spec-file in an intuitive,
 KDE-based GUI, you can execute RPM inside KRPMBuilder and control the
 progress of the package build process.
+
+%description -l pl
+KRPMBuilder to aplikacja KDE u³atwiaj±ca tworzenie plików spec i
+pakietów RPM. Po edycji pliku spec w intuicyjnym, opartym o KDE
+interfejsie graficznym, mo¿na uruchomiæ RPM-a z poziomu KRPMBuildera i
+kontrolowaæ postêp procesu budowania pakietu.
 
 %prep
 %setup -q
