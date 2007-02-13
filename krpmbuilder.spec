@@ -1,5 +1,5 @@
 Summary:	KRPMBuilder makes the building of spec files and RPM packages easy
-Summary(pl.UTF-8):   KRPMBuilder - narzędzie ułatwiające tworzenie plików spec i pakietów RPM
+Summary(pl.UTF-8):	KRPMBuilder - narzędzie ułatwiające tworzenie plików spec i pakietów RPM
 Name:		krpmbuilder
 Version:	1.2
 Release:	0.2
