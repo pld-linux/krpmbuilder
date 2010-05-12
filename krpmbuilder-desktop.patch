@@ -1,0 +1,17 @@
+--- krpmbuilder-1.2/src/krpmbuilder.desktop~	2003-01-15 16:20:21.000000000 +0100
++++ krpmbuilder-1.2/src/krpmbuilder.desktop	2010-05-12 17:47:17.256142637 +0200
+@@ -1,12 +1,10 @@
+-# KDE Config File  
+ [Desktop Entry]
+ Encoding=UTF-8
+ Type=Application
+ Exec=krpmbuilder -caption "%c" %i %m  
+ Icon=krpmbuilder.png
+ DocPath=krpmbuilder/index.html
+-Comment=
+-Comment[de]=
++Comment=KRPMBuilder makes the building of spec files and RPM packages easy
+ Terminal=0
+ Name=KRPMBuilder
+-Name[de]=KRPMBuilder
++Categories=Qt;KDE;Development;

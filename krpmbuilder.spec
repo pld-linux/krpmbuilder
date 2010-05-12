@@ -2,11 +2,12 @@ Summary:	KRPMBuilder makes the building of spec files and RPM packages easy
 Summary(pl.UTF-8):	KRPMBuilder - narzędzie ułatwiające tworzenie plików spec i pakietów RPM
 Name:		krpmbuilder
 Version:	1.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/krpmbuilder/%{name}-%{version}.tar.gz
 # Source0-md5:	99b84803171d64f1347617b5facd3851
+Patch0:		%{name}-desktop.patch
 URL:		http://krpmbuilder.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
@@ -28,6 +29,7 @@ kontrolować postęp procesu budowania pakietu.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
